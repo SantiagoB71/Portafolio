@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Estilos-->
+    <link rel="stylesheet" href="/assets/css/estilo.css" />
+    <link rel="stylesheet" href="/assets/css/scroll.css" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/fonts/poppins/poppins.css" />
+    <title>Portafolio</title>
+  </head>
+  <body>
+    <!--layout principal-->
+    <div class="layout">
+      <!--barra lateral(info del usuario)-->
+      <aside class="layout__aside">
+        <section class="aside__user-info">
+          <!--informacion general-->
+          <div class="user-info__general">
+            <div class="user-info__container-image">
+              <img
+                src="assets/img/default-user.jpg"
+                class="user-info__image"
+                alt="foto de perfil del usuario"
+              />
+            </div>
+
+            <h2 class="user-info__name">Santiago Bejarano</h2>
+            <h4 class="user-info__job">Desarrollador Web</h4>
+          </div>
+          <!--menu de navegacion-->
+          <nav class="layout__menu">
+            <ul class="menu__list">
+              <li class="menu__option">
+                <a href="index.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-house"></i>
+                  <span class="menu__overlay">Home</span>
+                </a>
+              </li>
+              <li class="menu__option">
+                <a href="sobre-mi.html" class="menu__link menu__link--active">
+                  <i class="menu__icon fa-solid fa-user"></i>
+                  <span class="menu__overlay">Sobre mi</span>
+                </a>
+              </li>
+              <li class="menu__option">
+                <a href="estudios.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                  <span class="menu__overlay">Curriculum</span>
+                </a>
+              </li>
+              <li class="menu__option">
+                <a href="portafolio.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-briefcase"></i>
+                  <span class="menu__overlay">Portafolio</span>
+                </a>
+              </li>
+              <li class="menu__option">
+                <a href="blog.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-book"></i>
+                  <span class="menu__overlay">Blog</span>
+                </a>
+              </li>
+              <li class="menu__option">
+                <a href="contacto.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-envelope"></i>
+                  <span class="menu__overlay">Contacto</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!--links a redes-->
+          <div class="info__user-links">
+            <ul class="links__social">
+              <li class="social__option">
+                <a href="·" class="social__link">
+                  <i class="social__icon fa-brands fa-twitter"></i>
+                </a>
+              </li>
+
+              <li class="social__option">
+                <a href="·" class="social__link">
+                  <i class="social__icon fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+
+              <li class="social__option">
+                <a href="·" class="social__link">
+                  <i class="social__icon fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Boton del curriculum-->
+          <div class="user-info__buttons">
+            <a href="·" class="user-info__btn">Descargar CV</a>
+          </div>
+          <!--Pie de pagina-->
+          <footer class="user-info__footer">
+            &copy; 2024 Santiago Bejarano Web
+          </footer>
+        </section>
+      </aside>
+
+      <!--Contenido Principal-->
+      <main class="layout__content">
+        <section class="content__page content__about">
+          <!--ESTE CONTENIDO CAMBIA EN CADA PAGINA DEL SITIO WEB-->
+          <header class="about__header">
+            <h1 class="about__title">
+              Sobre <span class="title__color"> Mi </span>
+            </h1>
+          </header>
+
+          <section class="about__personal-info">
+            <article class="personal-info__bio">
+              <p class="personal-info__description">
+                Soy un estudiante de ingeniería de sistemas en la Universidad
+                Cooperativa de Colombia, apasionado por el desarrollo web. Tengo
+                habilidades sólidas en HTML5, CSS3, JavaScript, Bootstrap y
+                control de versiones con Git.También estoy explorando Python y
+                SQL para desarrollo backend y bases de datos. Además, trabajo
+                con tecnologías como jQuery y preprocesadores CSS como SASS.
+              </p>
+            </article>
+            <div class="personal-info__data">
+              <ul class="personal-info__list">
+                <li class="personal-info__option">
+                  <span class="personal-info__title">Edad</span>
+                  <span class="personal-info__value">22</span>
+                </li>
+                <li class="personal-info__option">
+                  <span class="personal-info__title">Pais</span>
+                  <span class="personal-info__value">Colombia</span>
+                </li>
+                <li class="personal-info__option">
+                  <span class="personal-info__title">Direccion</span>
+                  <span class="personal-info__value"
+                    >CRA 52 C #47 A 09-SUR</span
+                  >
+                </li>
+                <li class="personal-info__option">
+                  <span class="personal-info__title">Correo</span>
+                  <span class="personal-info__value"
+                    >Santiagobejaranov10@gmail.com</span
+                  >
+                </li>
+                <li class="personal-info__option">
+                  <span class="personal-info__title">Telefono</span>
+                  <span class="personal-info__value">3013164287</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="about__services">
+            <header class="services__header">
+              <h2 class="services__title">
+                Lo que <span class="title__color"> Hago </span>
+              </h2>
+            </header>
+
+            <div class="services__container">
+              <article class="services__service">
+                <div class="service__icon">
+                  <i class="service__real-icon fa-solid fa-code"></i>
+                </div>
+
+                <div class="service__content">
+                  <h3 class="service__title">Programacion</h3>
+                  <p class="service__description">
+                    Ofrezco servicios en programación, destacando en el
+                    desarrollo frontend con experiencia en HTML5, CSS,
+                    JavaScript, jQuery, Bootstrap y Angular. Además, tengo
+                    habilidades en el manejo de bases de datos utilizando Python
+                    y SQL, lo que me permite explorar el desarrollo backend. Soy
+                    autodidacta y proactivo, con una sólida comprensión de
+                    control de versiones con Git.
+                  </p>
+                </div>
+              </article>
+
+              <article class="services__service">
+                <div class="service__icon">
+                  <i
+                    class="service__real-icon fa-solid fa-screwdriver-wrench"
+                  ></i>
+                </div>
+
+                <div class="service__content">
+                  <h3 class="service__title">Soporte</h3>
+                  <p class="service__description">
+                    En el ámbito de soporte, cuento con experiencia como
+                    profesional en sitio, liderando eficientemente la gestión
+                    del dominio y optimizando procesos de alistamiento. Brindo
+                    soporte técnico y diseño soluciones para mejorar la
+                    conectividad. Además, he liderado equipos para garantizar la
+                    satisfacción del cliente y gestionado devoluciones de manera
+                    eficiente.
+                  </p>
+                </div>
+              </article>
+
+              <article class="services__service">
+                <div class="service__icon">
+                  <i class="service__real-icon fa-solid fa-computer"></i>
+                </div>
+
+                <div class="service__content">
+                  <h3 class="service__title">Desarrollo Web</h3>
+                  <p class="service__description">
+                    En el ámbito del desarrollo web, ofrezco servicios completos
+                    que abarcan tanto el frontend como el backend. En el
+                    frontend, tengo experiencia sólida en el uso de tecnologías
+                    como HTML5, CSS, JavaScript, jQuery, Bootstrap y Angular
+                    para crear interfaces atractivas y funcionales que
+                    proporcionen una experiencia de usuario excepcional. Además,
+                    puedo desarrollar aplicaciones web dinámicas y robustas
+                    utilizando frameworks como Angular.
+                  </p>
+                </div>
+              </article>
+
+              <article class="services__service">
+                <div class="service__icon">
+                  <i
+                    class="service__real-icon fa-solid fa-magnifying-glass-chart"
+                  ></i>
+                </div>
+
+                <div class="service__content">
+                  <h3 class="service__title">Analisis de datos</h3>
+                  <p class="service__description">
+                    en analítica de datos, tengo habilidades en Power BI, siendo
+                    capaz de extraer, transformar y visualizar datos para
+                    generar insights que impulsen la toma de decisiones. Creo
+                    paneles de control interactivos y reportes personalizados,
+                    optimizando procesos y presentando información de manera
+                    visual para facilitar su comprensión y análisis.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- <section class="about__reviews">
+            <header class="reviews__header">
+              <h2 class="reviews__title">Reseñas</h2>
+            </header>
+            <div class="reviews__container">
+              <article class="reviews__review">
+                <div class="review__image-container">
+                  <img
+                    src="/assets/img/testimonio1.jpg"
+                    alt="Cara de cliente"
+                    class="review__image"
+                  />
+                  <div class="review__description">
+                    <p class="review__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sit itaque nihil aliquid deserunt quidem, suscipit
+                      perspiciatis nulla omnis, earum perferendis animi quae
+                      corporis ipsum culpa, error rem numquam beatae rerum.
+                    </p>
+                  </div>
+                  <div class="review__author">
+                    <div class="review__author-info">
+                      <h4 class="review__name">Ana Lopez</h4>
+                      <h5 class="review__company">Developers S.A</h5>
+                    </div>
+                    <div class="review__author-icon">
+                      <i class="review__icon fa-solid fa-quote-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="reviews__review">
+                <div class="review__image-container">
+                  <img
+                    src="/assets/img/testimonio2.jpg"
+                    alt="Cara de cliente"
+                    class="review__image"
+                  />
+                  <div class="review__description">
+                    <p class="review__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sit itaque nihil aliquid deserunt quidem, suscipit
+                      perspiciatis nulla omnis, earum perferendis animi quae
+                      corporis ipsum culpa, error rem numquam beatae rerum.
+                    </p>
+                  </div>
+                  <div class="review__author">
+                    <div class="review__author-info">
+                      <h4 class="review__name">Ruben Martines</h4>
+                      <h5 class="review__company">FullStack S.L</h5>
+                    </div>
+                    <div class="review__author-icon">
+                      <i class="review__icon fa-solid fa-quote-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="about__clients">
+            <header class="clients__header">
+              <h2 class="clients__title">Clientes</h2>
+            </header>
+
+            <div class="clients__container">
+              <article class="clients__item">
+                <a href="#" class="clients__link">
+                  <img
+                    src="assets/img/cliente-1.png"
+                    alt="Logo cliente"
+                    class="clients__image"
+                  />
+                </a>
+              </article>
+              <article class="clients__item">
+                <a href="#" class="clients__link">
+                  <img
+                    src="assets/img/cliente-2.png"
+                    alt="Logo cliente"
+                    class="clients__image"
+                  />
+                </a>
+              </article>
+              <article class="clients__item">
+                <a href="#" class="clients__link">
+                  <img
+                    src="assets/img/cliente-3.png"
+                    alt="Logo cliente"
+                    class="clients__image"
+                  />
+                </a>
+              </article>
+              <article class="clients__item">
+                <a href="#" class="clients__link">
+                  <img
+                    src="assets/img/cliente-4.png"
+                    alt="Logo cliente"
+                    class="clients__image"
+                  />
+                </a>
+              </article>
+              <article class="clients__item">
+                <a href="#" class="clients__link">
+                  <img
+                    src="assets/img/cliente-5.png"
+                    alt="Logo cliente"
+                    class="clients__image"
+                  />
+                </a>
+              </article>
+            </div>
+          </section>
+
+          <section class="about__prices">
+            <header class="price__header">
+              <h2 class="price__title">Precio</h2>
+            </header>
+
+            <div class="price__container">
+              <article class="prices__box">
+                <div class="prices__subtitle">
+                  <span class="prices__text">Normal</span>
+                </div>
+                <div class="prices__price">
+                  <span class="prices__number"> 20$ </span>
+                  <small class="prices__advise"> Al mes </small>
+                </div>
+                <div class="prices__buy">
+                  <a href="#" class="prices__btn"> Prueba Gratis </a>
+                </div>
+                <div class="prices__reward">Un curso de desarrollo web</div>
+                <div class="prices__reward">Soporte a preguntas</div>
+                <div class="prices__reward">Certificado de Finalización</div>
+              </article>
+              <article class="prices__box">
+                <div class="prices__subtitle">
+                  <span class="prices__text">Premium</span>
+                </div>
+                <div class="prices__price">
+                  <span class="prices__number"> 50$ </span>
+                  <small class="prices__advise"> Al mes </small>
+                </div>
+                <div class="prices__buy">
+                  <a href="#" class="prices__btn"> Prueba Gratis </a>
+                </div>
+                <div class="prices__reward">Cinco cursos de desarrollo web</div>
+                <div class="prices__reward">
+                  Soporte a preguntas prioritario
+                </div>
+                <div class="prices__reward">Certificado de Finalización</div>
+              </article>
+            </div>
+          </section>
+
+          <section class="about__extra">
+            <header class="extra__header">
+              <h2 class="extra__title">
+                Informacion <span class="title__color">Extra</span>
+              </h2>
+            </header>
+            <div class="extra__container">
+              <article class="extra__info">
+                <i class="extra__icon fa-solid fa-heart"></i>
+                <h4 class="extra__subtitle">Alumnos Contentos</h4>
+                <span class="extra__quantity">375.000</span>
+              </article>
+              <article class="extra__info">
+                <i class="extra__icon fa-solid fa-clock"></i>
+                <h4 class="extra__subtitle">Horas de contenido</h4>
+                <span class="extra__quantity">1.000</span>
+              </article>
+              <article class="extra__info">
+                <i class="extra__icon fa-solid fa-star"></i>
+                <h4 class="extra__subtitle">Puntuacion</h4>
+                <span class="extra__quantity">10</span>
+              </article>
+            </div>
+          </section> -->
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
